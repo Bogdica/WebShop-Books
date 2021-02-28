@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+#page {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+header {
+  height: 70px;
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+header img,
+header h3,
+header input,
+header i {
+  float: left;
+}
+header img {
+  height: 50px;
+  cursor: pointer;
+}
+header input {
+  width: 50%;
+  margin-left: 50px;
+  padding: 7px 12px;
+  border: 1px solid #000;
+  border-right: none;
+  outline: none;
+  margin-top: 10px;
+  font-size: 1em;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+header i {
+  padding: 8px 12px;
+  color: #f00;
+  border: 1px solid #000;
+  border-left: none;
+  margin-top: 10px;
+  cursor: pointer;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.header-right {
+  float: right;
+}
+.header-right i {
+  border: none;
+  color: #000;
+}
+.header-right span {
+  font-size: 1.2em;
+  margin-top: 10px;
+  cursor: pointer;
+  position: relative;
+  margin-right: 3px;
+}
+.header-right p {
+  position: absolute;
+  top: 0;
+  right: 340px;
+  background-color: red;
+  border-radius: 50%;
+  color: #fff;
+  width: 20px;
+  text-align: center;
+}
+
+.header-right i:hover,
+.header-right span:hover {
+  color: #f00;
+}
+.header-right button {
+  padding: 8px 20px;
+  font-size: 1em;
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.header-right button:hover,
+#form button:hover {
+  opacity: 0.6;
+}
+main {
+  background-color: #fff;
+  overflow: hidden;
+}
+footer {
+  height: 60px;
+  background-color: #666;
+  padding: 10px;
+  text-align: center;
+  font-size: 1em;
+  clear: both;
+  color: #fff;
+}
+#login-page,
+#singup-page {
+  background-image: url("img/background1.jfif");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding-top: 40px;
+}
+
+.checked {
+  color: #ff7b00;
+}
+#card {
+  float: left;
+  padding: 10px;
+  width: 24%;
+  margin: 5px;
+  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+}
+#card img {
+  height: 400px;
+  width: 250px;
+}
+
+#card button {
+  padding: 8px 24px;
+  background-color: #ff7b00;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 1em;
+  float: left;
+  margin: 10px;
+  color: #fff;
+  width: 40%;
+}
+#card button:hover {
+  color: #000;
+  background-color: #ffb800;
+}
+.model {
+  position: fixed;
+  top: 5%;
+  left: 35%;
+  width: 30%;
+  height: 90%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0, 0.95);
+  color: #fff;
+  padding: 20px;
+}
+.close {
+  float: right;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+.close:hover {
+  color: #f00;
+}
+.none {
+  display: none;
+}
+#admin {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #ccc;
+  padding: 20px;
+}
+#admin label,
+#admin input,
+#admin textarea {
+  display: block;
+}
+#admin label {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+#admin input,
+#admin textarea {
+  padding: 8px 12px;
+  width: 100%;
+  font-size: 1em;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+}
+#admin button {
+  text-align: center;
+  padding: 12px 24px;
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  font-size: 1em;
+  margin-left: 40%;
+}
+
+#login,
+#singup {
+  width: 35%;
+  margin: auto;
+  background-color: #666;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0px 0px 9px 1px rgba(204, 204, 204, 1);
+}
+#login label,
+#singup label #login input,
+#singup input {
+  display: block;
+}
+#login label,
+#singup label {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+#login input,
+#singup input {
+  padding: 8px 12px;
+  font-size: 1em;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin: 5px;
+}
+#login button,
+#singup button {
+  padding: 12px 34px;
+  background-color: #000;
+  color: #ccc;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  margin: 20px;
+  cursor: pointer;
+}
+#login button:hover,
+#singup button:hover {
+  opacity: 0.6;
+}
+#login img,
+#singup img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 10% 35%;
+  display: block;
+}
+.error,
+.error1 {
+  padding: 5px;
+  color: #000;
+  background-color: #ffb800;
+  border: 1px solid #000;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 600;
+}

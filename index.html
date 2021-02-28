@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div id="page" class="none">
+        <header>
+            <img src="img/book-logo.jpg" alt="book-logo" onclick="backToPage()">
+            <h3>ABC Book</h3>
+            <input type="text" placeholder="Search book by autor ..." onkeyup="searchBook(event)">
+            <i class="fas fa-search"></i>
+            <div class="header-right">
+                <span onclick="shoppingCatr()"><i class="fas fa-shopping-cart"></i></span>
+                <p class="number-cart">0</p>
+                <span class="circle"></span> 
+                <span onclick="adminPanel()">Admin</span>
+                <button onclick="singout()">Sign Out</button>    
+            </div>
+        </header>
+        <div class="slide-show">
+            <img src="" alt="slide" id="image">
+        </div>
+        
+    
+        <main id="main">
+            <div id="admin" class="none">
+                <label for="img">Slika knjige: </label>
+                <input type="text" placeholder="Dodati sliku knjige.." id="img-form" name="img-form">
+                <label for="img">Naslov knjige: </label>
+                <input type="text" placeholder="Dodati naslov knjige.." id="title-form" name="title-form"> 
+                <label for="img">Autor knjige: </label>
+                <input type="text" placeholder="Dodati autora knjige.." id="autor-form" name="autor-form">
+                <label for="img">Cijena knjige: </label>
+                <input type="text" placeholder="Dodati cijenu knjige.." id="price-form" name="price-form"> 
+                <label for="img">Opis knjige: </label>
+                <textarea name="book-desc" id="book-desc" cols="60" rows="10" placeholder="Dodati opis knjige..."></textarea>
+                <button onclick="addBookByAdmin()">Add book</button>
+            </div>
+            <div id="wrapper"></div>
+        </main>
+        
+        <footer>
+          <p>&copy;ABC Book</p>  
+        </footer>
+    </div>
+    <div id="login-page">
+        <div id="login">
+            <img src="img/log-in.jfif" alt="me">
+            <label for="emeil">Enter email or username: </label>
+            <input type="email" placeholder="email or username" id="email" name="email">
+            <label for="psw">Enter password: </label>
+            <input type="password" placeholder="password" id="psw" name="psw">
+            <p class="error none"></p> 
+            <button onclick="login()">LogIn</button>
+            <button onclick="singup()">SingUp</button>
+        </div>
+    </div>
+    <div id="singup-page" class="none">
+        <div id="singup">
+            <img src="img/log-in.jfif" alt="me">
+            <label for="firstnamesingup">Enter First name: </label>
+            <input type="text" placeholder="First name" id="firstnamesingup" name="firstnamesingup">
+            <label for="lastnamesingup">Enter Last name</label>
+            <input type="text" placeholder="Last name" id="lastnamesingup" name="lastnamesingup">
+            <label for="usernamesingup">Enter username: </label>
+            <input type="text" placeholder="Username" id="usernamesingup" name="usernamesingup">
+            <label for="emailsingup">Enter email: </label>
+            <input type="email" placeholder="Email" id="emailsingup" name="emailsingup">
+            <label for="pswsingup">Enter password</label>
+            <input type="password" placeholder="Password" id="pswsingup" name="pswsingup">
+            <p class="error1 none"></p>
+            <button onclick="singupSave()">SingUp</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
